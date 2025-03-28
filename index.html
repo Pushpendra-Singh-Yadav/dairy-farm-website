@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Dairy Farm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Premier Dairy</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 class="hero-title">Welcome to Premier Dairy Farm</h1>
+                <p class="hero-subtitle">Delivering farm-fresh dairy products with a commitment to quality and sustainability.</p>
+                <a href="#products" class="hero-btn">Explore Our Products</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1587655312707-28b4c632df0e" alt="Fresh Milk Farm" class="responsive-hero-img">
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Welcome to Premier Dairy Farm, where tradition meets innovation. Nestled in the picturesque landscapes of India, we pride ourselves on delivering pure, fresh milk straight from our ethically treated cows. Sustainability and quality are at the heart of everything we do, ensuring every sip of our milk is packed with nourishment and care.</p>
+            </div>
+            <div class="about-images">
+                <img src="cow.jpeg" alt="Indian Dairy Farmer" class="responsive-img">
+                <img src="cow farm.jpeg" alt="Indian Cow Farm" class="responsive-img">
+                <img src="dairy farmer.jpeg" alt="Indian Milk Farmer" class="responsive-img">
+            </div>
+        </div>
+    </section>     
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Our Products</h2>
+            <p class="section-intro">Discover our range of fresh and pure dairy products, crafted with love and care.</p>
+            <div class="product-cards">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300" alt="Fresh Milk">
+                    <h3>Fresh Milk</h3>
+                    <p>Pure, wholesome milk sourced directly from our well-cared-for cows.</p>
+                    <button class="btn learn-more-btn" data-product="milk">Learn More</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300" alt="Artisanal Cheese">
+                    <h3>Artisanal Cheese</h3>
+                    <p>Handcrafted cheeses made using traditional methods for rich flavor.</p>
+                    <button class="btn learn-more-btn" data-product="cheese">Learn More</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300" alt="Creamy Butter">
+                    <h3>Creamy Butter</h3>
+                    <p>Rich, creamy butter churned from the freshest cream available.</p>
+                    <button class="btn learn-more-btn" data-product="butter">Learn More</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Popup -->
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 id="modal-title">Product Title</h3>
+                <p id="modal-description">Detailed product information goes here.</p>
+            </div>
+        </div>
+    </section>    
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p class="section-intro">Explore the heart of Premier Dairy Farm through our stunning visuals!</p>
+            <div class="gallery-grid">
+                <img src="https://via.placeholder.com/400x300" alt="Dairy Farm Landscape" class="gallery-item">
+                <img src="https://via.placeholder.com/400x300" alt="Happy Cows Grazing" class="gallery-item">
+                <img src="https://via.placeholder.com/400x300" alt="Milking Process" class="gallery-item">
+                <img src="https://via.placeholder.com/400x300" alt="Cheese Aging Room" class="gallery-item">
+                <img src="https://via.placeholder.com/400x300" alt="Butter Churning" class="gallery-item">
+                <img src="https://via.placeholder.com/400x300" alt="Farmers at Work" class="gallery-item">
+            </div>
+            <!-- Lightbox -->
+            <div id="lightbox" class="lightbox">
+                <img id="lightbox-img" src="" alt="Large View">
+            </div>
+        </div>
+    </section>    
+
+    <section id="why-choose-us" class="why-choose-us-section">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <p class="section-intro">Discover what makes Premier Dairy Farm stand out from the rest.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="1.jpeg" alt="Unmatched Quality">
+                    <h3>Unmatched Quality</h3>
+                    <p>Our milk is rigorously tested for purity, ensuring every glass is fresh and wholesome.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="2.jpeg" alt="Sustainable Practices">
+                    <h3>Sustainable Practices</h3>
+                    <p>We prioritize eco-friendly farming methods to care for the environment.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="3.jpeg" alt="Ethical Treatment">
+                    <h3>Ethical Treatment</h3>
+                    <p>Our cows are treated with love, ensuring their health and happiness.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="4.jpeg" alt="Farm-to-Table Freshness">
+                    <h3>Farm-to-Table Freshness</h3>
+                    <p>From milking to delivery, we ensure our products reach you fresh and unprocessed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Reach out to us with any questions, feedback, or inquiries.</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2025 Premier Dairy Farm. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about">About Us</a>
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
